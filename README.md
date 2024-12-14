@@ -16,4 +16,4 @@
 - `static/`: 存放静态文件（CSS、JavaScript）
 - `templates/`: 存放 HTML 模板
 - `app.py`: Flask 后端应用主文件
-- `database.py`: 数据库操作相关代码 
+- `database.py`: 数据库操作相关代码
