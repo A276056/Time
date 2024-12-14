@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人记账本</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>个人记账本</h1>
+        
+        <!-- 添加记录表单 -->
+        <div class="add-form">
+            <h2>添加记录</h2>
+            <div class="form-group">
+                <input type="number" id="amount" placeholder="金额" step="0.01">
+                <select id="type">
+                    <option value="收入">收入</option>
+                    <option value="支出">支出</option>
+                </select>
+                <input type="text" id="note" placeholder="备注">
+                <button onclick="addTransaction()">添加</button>
+            </div>
+        </div>
+
+        <!-- 统计信息 -->
+        <div class="statistics">
+            <div class="stat-item">
+                <span>总收入：</span>
+                <span id="total-income">0</span>
+            </div>
+            <div class="stat-item">
+                <span>总支出：</span>
+                <span id="total-expense">0</span>
+            </div>
+        </div>
+
+        <!-- 记录列表 -->
+        <div class="transactions">
+            <h2>收支记录</h2>
+            <div id="transaction-list"></div>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 
